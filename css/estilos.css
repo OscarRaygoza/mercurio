@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sans Serif Collection";
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    width: 120rem;
+    margin: 0 auto;
+}
+.nav-background{
+    background-color: #333333;
+    width: 100%;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color: #333333;
+}
+
+nav li{
+    flex-direction: row;
+    list-style: none;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+.container-nav{
+    width: 120rem;
+    background-color: rgba(255,255,255,0.1);
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.menu-content{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.menu li{
+    list-style: none;
+    font-size: 3rem;
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+.img-Nav{
+    width: 10rem;
+    padding:1rem;
+    position: absolute;
+}
+
+.hamburguesa{
+    width: 5rem;
+    padding: 1rem;
+    cursor: pointer;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+.hamburguesa img{
+    width: 100%;
+    display: none;
+}
+/*estilos de footer*/
+footer{
+
+    background-color: aqua;
+    padding: 1em 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.1);
+    color: white;
+    padding: 0 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.social-icons img {
+    width: 30px; /* Ajusta el tamaño según sea necesario */
+    height: 30px;
+    border-radius: 50%; /* Para darle un aspecto redondeado a los iconos */
+}
+
+.img-footer{
+    margin-right: 2rem;
+}
+/*----Carrusel------*/
+.carrusel{
+    width: 100%;
+    max-width: 60rem;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.carrusel-principal{
+    width: 400%;
+    background-color: rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    transition: all .5s ease;
+    transform: translateX(-50%);
+}
+.carrusel .img-carrusel{
+    width: calc(100% / 4 - 2em);
+    min-height: 50vh;
+    background-color: transparent;
+}
+.carrusel .puntos{
+    width: 100% !important;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: .4em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.carrusel .punto{
+    list-style: none;
+    width: 2em;
+    height: 2em;
+    margin: 0 2em 0;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.carrusel .punto.activo{
+    background-color: #333;
+}
+
+@media only screen and (max-width: 768px) {
+    .h1{
+        color: white;
+        text-align: center;
+        font-size: 3rem;
+        margin-left: 3rem
+
+    }
+    .content-main{
+        position: absolute;
+        top: 10rem;
+    }
+    .container-nav{
+        width: 100%;
+        background-color: rgba(255,255,255,0.1);
+        margin: 0 auto;
+        border-radius: 15px;
+    }
+    .menu ul{
+        position: absolute;
+        flex-direction: column;
+        background-color: #333333;
+        top: 10rem;
+        width: 100%;
+        transform: translate(-100%);
+        transition: transform .5s;
+        z-index: 3;
+    }
+    .menu ul.aparece{
+        transform: translate(0%);
+    }
+    .hamburguesa img{
+        display: flex !important;
+        position: absolute;
+    }
+    .carrusel{
+        top: 12rem;
+        width: 100%;
+        max-width: 80rem;
+        overflow: hidden;
+        margin: 12rem auto;
+    }
+    .carrusel .img-carrusel {
+        width: calc(100% / 4 - 2em);
+        min-height: 80vh;
+        background-color: transparent;
+    }
+    .container {
+        width: 100%;
+        margin: 14rem auto;
+    }
+    .p-footer{
+        display: none;
+    }
+    .iconos-a{
+        display: none !important;
+    }
+
+    .social-icons img {
+        display: inline;
+        width: 4rem; /* Ajusta el tamaño según sea necesario */
+        height: 4rem;
+        border-radius: 50%; /* Para darle un aspecto redondeado a los iconos */
+    }
+    .footer{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .container {
+        width: 100%;
+        margin: 14rem auto;
+    }
+    .p-footer{
+        display: none;
+    }
+    .iconos-a{
+        display: none !important;
+    }
+
+    .social-icons img {
+        display: inline;
+        width: 4rem; /* Ajusta el tamaño según sea necesario */
+        height: 4rem;
+        border-radius: 50%; /* Para darle un aspecto redondeado a los iconos */
+    }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 700px) {
+    .container{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .example {background: green;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .example {background: orange;}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .example {background: pink;}
+}
