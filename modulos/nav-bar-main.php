@@ -2,7 +2,7 @@
 <div class="nav-background">
     <nav class="container">
         <ul class="menu_principal">
-            <li><a href="/index.php">Inicio</a></li>
+            <li><a href="/mercurio/index.php">Inicio</a></li>
             <li><a href="#">Administración</a></li>
             <li><a href="#">Compras</a></li>
             <li><a href="#">Recetas</a></li>
