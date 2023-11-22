@@ -6,7 +6,7 @@
         <div class="menu">
             <ul >
                 <li><a href="modulos/inicia_sesion.php">Inicia sesion</a></li>
-                <li><a href="#">Registrate</a></li>
+                <li><a href="/mercurio/modulos/registrate.php">Registrate</a></li>
                 <li><a href="#">Nosotros</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
