@@ -34,20 +34,20 @@
                 <input type="password" name="password">
                 <input type="password" name="password_repet">
             </div>
-            <div class="label_correo mt-1 ">
+            <div class="label_pais mt-1">
                 <label>Correo Electronico:</label>
                 <label>Repite Correo:</label>
             </div>
-            <div class="input_correo">
+            <div class="input_pais">
                 <input type="email" name="email">
                 <input type="email" name="repeat_email">
             </div>
-            <div class="mt-1 label_domicilio">
+            <div class="mt-1 label_usuario">
                 <label>Calle: </label>
                 <label>Numero: </label>
                 <label>N° Interior</label>
             </div>
-            <div class="input_domicilio">
+            <div class="input_usuario">
                 <input type="text" name="calle">
                 <input type="number" name="numero">
                 <input type="text" name="interior">
