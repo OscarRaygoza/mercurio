@@ -60,7 +60,7 @@
                 <input type="number" name="cp">
                 <input type="text" name="colonia">
             </div>
-            <div class="mt-1 label_pais">
+            <div class="label_pais mt-1 ">
                 <label>Poblacion: </label>
                 <label>Pais: </label>
             </div>
