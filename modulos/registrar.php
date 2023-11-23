@@ -2,7 +2,8 @@
 ?><h1>Hola Mundo</h1><?php
 require '../clases/ConexionBD.php';
 require '../clases/HashPassword.php';
-$conn = \clases\ConexionBD::obtenerInstancia()->obtenerConexion();
+$conn = \mercurio\clases\ConexionBD::obtenerInstancia()->obtenerConexion();
+var_dump($conn);
 ?> <script>
         alert('Has entrado al modulo');
     </script>
