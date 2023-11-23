@@ -34,21 +34,13 @@
                 <input type="password" name="password">
                 <input type="password" name="password_repet">
             </div>
-            <div class="mt-1 label_correo">
+            <div class="label_correo mt-1 ">
                 <label>Correo Electronico:</label>
                 <label>Repite Correo:</label>
             </div>
             <div class="input_correo">
                 <input type="email" name="email">
                 <input type="email" name="repeat_email">
-            </div>
-            <div class="mt-1 label_cp">
-                <label>C.P. </label>
-                <label>Colonia: </label>
-            </div>
-            <div class="input_cp">
-                <input type="number" name="cp">
-                <input type="text" name="colonia">
             </div>
             <div class="mt-1 label_domicilio">
                 <label>Calle: </label>
@@ -59,6 +51,14 @@
                 <input type="text" name="calle">
                 <input type="number" name="numero">
                 <input type="text" name="interior">
+            </div>
+            <div class="mt-1 label_cp">
+                <label>C.P. </label>
+                <label>Colonia: </label>
+            </div>
+            <div class="input_cp">
+                <input type="number" name="cp">
+                <input type="text" name="colonia">
             </div>
             <div class="mt-1 label_pais">
                 <label>Poblacion: </label>
