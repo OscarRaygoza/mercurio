@@ -1,5 +1,5 @@
 <?php
-?><h1>Hola Mundo</h1><?php
+
 require '../clases/ConexionBD.php';
 require '../clases/HashPassword.php';
 $conn = \mercurio\clases\ConexionBD::obtenerInstancia()->obtenerConexion();
