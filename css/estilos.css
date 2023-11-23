@@ -398,25 +398,25 @@ footer{
 }
 .label_domicilio{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
     grid-column-gap: 10px;
     grid-row-gap: 1em;
 }
 .input_domicilio{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
     grid-column-gap: 10px;
     grid-row-gap: 1em;
 }
 .label_cp{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-column-gap: 10px;
     grid-row-gap: 1em;
 }
 .input_cp{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-column-gap: 10px;
     grid-row-gap: 1em;
 }
@@ -427,6 +427,18 @@ footer{
     grid-row-gap: 1em;
 }
 .input_pais{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 1em;
+}
+.label_correo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 1em;
+}
+.input_correo{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 10px;

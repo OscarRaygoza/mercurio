@@ -15,5 +15,7 @@
 </div>
 
 </body>
-<?php require '../modulos/footer_main.php' ?>
+<div class="back-footer">
+    <?php include '../modulos/footer_main.php' ?>
+</div>
 </html>

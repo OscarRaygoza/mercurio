@@ -12,10 +12,10 @@
 <body>
     <div class="contenedor_incia">
         <h2 class="h2">Inicia Sesion</h2>
-        <form class="inicia-sesion mt-5" action="registrar.php" method="post">
+        <form class="inicia-sesion mt-5" action="../modulos/iniciaSesion.php" method="post">
            <label>Usuario:</label> <input type="text" name="nombre_usuario"><br>
             <label class="mt-5">Contraseña: </label><input type="password" name="password"><br>
-            <input class="bouton mt-5" type="submit" value="Acceder">
+            <input class="bouton mt-5" type="submit" value="Acceder" name="acceder">
         </form>
     </div>
     <div class="back-footer">

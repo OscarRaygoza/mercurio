@@ -1,6 +1,7 @@
 <?php
 
 namespace clases;
+use mysqli;
 class ConexionBD
 {
     private static $instancia;
@@ -8,7 +9,7 @@ class ConexionBD
     private $servername = "localhost";
     private $username = "root";
     private $password = "Oscar*780917";
-    private $dbname = "mercurioDB";
+    private $dbname = "mercuriodb";
 
     private function __construct()
     {
@@ -36,9 +37,8 @@ class ConexionBD
     {
     }
 
-    private function __wakeup()
+    function __wakeup()
     {
     }
 }
 
-?>

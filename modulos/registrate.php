@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +13,7 @@
 <body>
     <div class="contenedor_form">
         <h2 class="h2">Registrate</h2>
-        <form class="inicia-sesion mt-5" action="registrar.php" method="post">
+        <form class="inicia-sesion mt-5" method="post" action="../modulos/registrar.php" >
             <div class="form_label">
                 <label>Nombre:</label>
                 <label>Apellido Paterno:</label>
@@ -20,8 +21,8 @@
             </div>
             <div class="form_nombre">
                 <input type="text" name="nombre">
-                <input type="text" name="nombre">
-                <input type="text" name="nombre">
+                <input type="text" name="apPaterno">
+                <input type="text" name="apMaterno">
             </div>
             <div class="mt-1 label_usuario">
                 <label>Nombre de Usuario:</label>
@@ -33,14 +34,13 @@
                 <input type="password" name="password">
                 <input type="password" name="password_repet">
             </div>
-            <span>Domicilio</span><br>
-            <div class="label_domicilio">
-                <label>Calle: </label>
-                <label>Numero: </label>
+            <div class="mt-1 label_correo">
+                <label>Correo Electronico:</label>
+                <label>Repite Correo:</label>
             </div>
-            <div class="input_domicilio">
-                <input type="text" name="calle">
-                <input type="number" name="numero">
+            <div class="input_correo">
+                <input type="email" name="email">
+                <input type="email" name="repeat_email">
             </div>
             <div class="mt-1 label_cp">
                 <label>C.P. </label>
@@ -50,6 +50,16 @@
                 <input type="number" name="cp">
                 <input type="text" name="colonia">
             </div>
+            <div class="mt-1 label_domicilio">
+                <label>Calle: </label>
+                <label>Numero: </label>
+                <label>N° Interior</label>
+            </div>
+            <div class="input_domicilio">
+                <input type="text" name="calle">
+                <input type="number" name="numero">
+                <input type="text" name="interior">
+            </div>
             <div class="mt-1 label_pais">
                 <label>Poblacion: </label>
                 <label>Pais: </label>
@@ -58,11 +68,11 @@
                 <input type="text" name="poblacion">
                 <input type="text" name="pais">
             </div>
-            <input class="bouton mt-5" type="submit" value="Registrarse">
+            <input name="insertar" class="bouton mt-5" type="submit" value="Registrarse">
         </form>
     </div>
 </body>
-<div class="back-footer">
+<!--<div class="back-footer">
     <?php include '../modulos/footer_main.php' ?>
-</div>
+</div>-->
 </html>
