@@ -88,7 +88,7 @@ $conn->close();
 ?>
 <script>
     alert('Registro exitoso');
-    window.location.replace('../index.php');
+    window.location.replace('/mercurio/index.php');
 </script>
 <?php
 

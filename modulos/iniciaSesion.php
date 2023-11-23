@@ -23,18 +23,18 @@ if(isset($_POST['acceder'])) {
             if (HashPassword::verificarHash($password, $hashGuardado)) {
                 ?><script>
                     alert('Usuario Correcto');
-                    window.location.replace('../modulos/administracion.php');
+                    window.location.replace('/mercurio/modulos/administracion.php');
                 </script><?php
             } else {
                 ?><script>
                     alert('Contraseña Incorrecta');
-                    window.location.replace('../index.php');
+                    window.location.replace('/mercurio/index.php');
                 </script><?php
             }
         } else {
             ?><script>
                 alert('Usuario no encontrado');
-                window.location.replace('../index.php');
+                window.location.replace("/mercurio/index.php');
             </script><?php
         }
     } else {
