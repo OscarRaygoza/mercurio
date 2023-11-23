@@ -1,12 +1,17 @@
 <?php
-
+?><h1>Hola Mundo</h1><?php
 require '../clases/ConexionBD.php';
 require '../clases/HashPassword.php';
 $conn = \clases\ConexionBD::obtenerInstancia()->obtenerConexion();
+?> <script>
+        alert('Has entrado al modulo');
+    </script>
+<?php
 
 // Verificar conexión
 if ($conn->connect_error) {
     die("Conexión fallida: " . $conn->connect_error);
+    echo 'No hay conexion';
 }
 
 if(isset($_POST['insertar'])){
