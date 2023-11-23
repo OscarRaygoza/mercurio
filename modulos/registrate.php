@@ -13,8 +13,7 @@
 <body>
     <div class="contenedor_form">
         <h2 class="h2">Registrate</h2>
-        <form class="inicia-sesion mt-5" method="post" action="/mercurio
-        /modulos/registrar.php" >
+        <form class="inicia-sesion mt-5" method="post" action="../modulos/registrar.php" >
             <div class="form_label">
                 <label>Nombre:</label>
                 <label>Apellido Paterno:</label>
